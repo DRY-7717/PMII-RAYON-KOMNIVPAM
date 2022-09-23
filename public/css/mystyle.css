@@ -1,0 +1,14 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-daftar{
+    border-top: 4px solid rgb(21, 0, 255);
+    border-radius: 15px;
+}
+.title-daftar{
+    color: rgb(112, 110, 110);
+}
+.title-pmiirayon{
+       color: rgb(112, 110, 110);
+}
