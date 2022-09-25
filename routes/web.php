@@ -21,3 +21,4 @@ Route::get('/', function () {
 });
 
 Route::get('/daftar',[RegisterController::class,'index']);
+Route::get('/daftar/registration',[RegisterController::class,'registration']);
