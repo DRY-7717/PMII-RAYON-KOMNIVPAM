@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,4 +22,9 @@ Route::get('/', function () {
 });
 
 Route::get('/daftar',[RegisterController::class,'index']);
-Route::get('/daftar/registration',[RegisterController::class,'registration']);
+Route::post('/daftar',[RegisterController::class,'registration']);
+
+// ? Auth Controller
+
+Route::get('/login', [AuthController::class,'index']);
+Route::post('/login', [AuthController::class, 'authenticate']);
